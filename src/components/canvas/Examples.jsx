@@ -32,29 +32,30 @@ export const Chaos = ({ ...props }) => {
   const group = useRef();
   const light = useRef();
 
-  useFrame((state, delta) => {
-    easing.dampE(
-      group.current.rotation,
-      [0, -state.pointer.x * (Math.PI / 10), 0],
-      1.5,
-      delta
-    );
-    easing.damp3(
-      group.current.position,
-      [0, 0, 1 - Math.abs(state.pointer.x)],
-      1,
-      delta
-    );
-    easing.damp3(
-      light.current.position,
-      [state.pointer.x * 8, 0, 8 + state.pointer.y * 2],
-      0.2,
-      delta
-    );
-  });
+  // useFrame((state, delta) => {
+  //   easing.dampE(
+  //     group.current.rotation,
+  //     [0, -state.pointer.x * (Math.PI / 10), 0],
+  //     1.5,
+  //     delta
+  //   );
+  //   easing.damp3(
+  //     group.current.position,
+  //     [0, 0, 1 - Math.abs(state.pointer.x)],
+  //     1,
+  //     delta
+  //   );
+  //   easing.damp3(
+  //     light.current.position,
+  //     [state.pointer.x * 8, 0, 8 + state.pointer.y * 2],
+  //     0.2,
+  //     delta
+  //   );
+  // });
 
   return (
     <group ref={group} {...props}>
+      <Environment preset="night" />
       <Gltf
         src="/models/chaos/1c_env.glb"
         position={[-4, -2.7, -1]}
@@ -63,7 +64,8 @@ export const Chaos = ({ ...props }) => {
       />
       <Gltf
         src="/models/chaos/1c.glb"
-        position={[0, 1, 0]}
+        // position={[0, 1, 0]}
+        position={[0, 5, 0]}
         scale={[0.05, 0.05, 0.05]}
         rotation={[0, Math.PI * 0.78, 0]}
       />
