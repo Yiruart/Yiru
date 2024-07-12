@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       style={{
         position: "relative",
         width: "100vw",
-        height: "100%",
+        height: "auto",
         touchAction: "auto",
       }}
     >

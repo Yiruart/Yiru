@@ -7,7 +7,7 @@ export const metadata = {
   description: "An artist based in London.",
 };
 
-const Proxima = localFont({
+const proxima = localFont({
   src: [
     {
       path: "../public/fonts/proximanova_light.otf",
@@ -25,12 +25,31 @@ const Proxima = localFont({
       style: "normal",
     },
   ],
+  display: "swap",
+  variable: "--font-proxima",
+});
+
+const cardinal = localFont({
+  src: [
+    {
+      path: "../public/fonts/cardinalfruit-regular.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/cardinalfruit-medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-cardinal",
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="antialiased">
-      <body className={Proxima.className}>
+      <body className={`${proxima.variable} ${cardinal.variable}`}>
         <Layout>{children}</Layout>
       </body>
     </html>

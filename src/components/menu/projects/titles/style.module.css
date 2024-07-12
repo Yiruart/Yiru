@@ -1,0 +1,41 @@
+.titles {
+  width: 100%;
+  border-top: 1px solid rgba(183, 171, 152, 0.25);
+}
+.titles .title {
+  border-bottom: 1px solid rgba(183, 171, 152, 0.25);
+  cursor: default;
+  position: relative;
+  z-index: 2;
+}
+.titles .title .wrapper {
+  display: inline-block;
+  padding-left: 10%;
+}
+.titles .title .wrapper p {
+  display: inline-block;
+  /* color: #b7ab98; */
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 5vw;
+  line-height: 8vw;
+  margin: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .titles .title .wrapper p {
+    font-size: 6.5vw; /* 根据需求调整大小 */
+    line-height: 10vw; /* 根据需求调整大小 */
+  }
+}
+
+.titles .title .wrapper p:nth-of-type(2) {
+  display: block;
+  position: absolute;
+  color: #545351;
+  top: 0;
+  z-index: 1;
+}
