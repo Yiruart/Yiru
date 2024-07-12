@@ -1,6 +1,5 @@
 "use client";
 
-import ScheduledForAbolition from "@/components/ScheduledForAbolition";
 import Chaos from "@/components/chaos/Chaos";
 import Header from "@/components/Header";
 import About from "@/components/about/About";
@@ -8,6 +7,7 @@ import Heading from "@/components/home/Heading";
 import Menu from "@/components/menu/Menu";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
+import ScheduledForAbolition from "@/components/scheduled_for_abolition/ScheduledForAbolition";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),

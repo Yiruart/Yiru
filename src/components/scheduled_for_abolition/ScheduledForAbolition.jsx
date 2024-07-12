@@ -28,7 +28,7 @@ const View = dynamic(
   }
 );
 
-const Chaos = () => {
+const ScheduledForAbolition = () => {
   const [active, setActive] = useState(0);
 
   return (
@@ -37,7 +37,7 @@ const Chaos = () => {
         {data.title}
       </h1>
 
-      <div className="sm:absolute sm:w-[40%] top-[30%] left-8 sm:left-16 z-10 p-8 sm:p-0">
+      <div className="sm:absolute sm:w-[40%] top-[30%] right-8 sm:right-16 z-10 p-8 sm:p-0">
         <ul className="flex gap-x-2 text-2xl sm:text-3xl font-medium font-cardinal mb-4">
           {data.list.map((item, index) => {
             return (
@@ -64,7 +64,7 @@ const Chaos = () => {
         <p className="hidden sm:block w-full">{data.description}</p>
       </div>
 
-      <div className="block sm:absolute sm:top-0 sm:right-0 w-full h-[100vw] sm:w-[70%] sm:h-screen sm:ml-auto">
+      <div className="block sm:absolute sm:top-0 sm:-left-32 w-full h-[100vw] sm:w-[70%] sm:h-screen sm:ml-auto">
         <View orbit className="h-full w-full">
           <Suspense fallback={null}>
             <fog attach="fog" args={["black", 10, 20]} />
@@ -80,4 +80,4 @@ const Chaos = () => {
   );
 };
 
-export default Chaos;
+export default ScheduledForAbolition;
