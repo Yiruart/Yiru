@@ -10,6 +10,7 @@ import { Suspense } from "react";
 import ScheduledForAbolition from "@/components/scheduled_for_abolition/ScheduledForAbolition";
 import CompanionSpecies from "@/components/companion species/CompanionSpecies";
 import DayInNight from "@/components/day in night/DayInNight";
+import OnTheNose from "@/components/on the nose/OnTheNose";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
@@ -34,9 +35,7 @@ const Common = dynamic(
 
 export default function Page() {
   return (
-    <div className="w-screen">
-      <Header />
-
+    <div className="w-screen font-proxima">
       {/* Homepage Model */}
       <div className="relative w-screen h-screen">
         <View className="h-full w-full">
@@ -53,6 +52,8 @@ export default function Page() {
       <Chaos />
 
       <ScheduledForAbolition />
+
+      <OnTheNose />
 
       <CompanionSpecies />
 
