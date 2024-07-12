@@ -22,7 +22,7 @@ const View = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="flex h-96 w-screen flex-col items-center justify-center">
+      <div className="flex w-screen flex-col items-center justify-center">
         Loading...
       </div>
     ),
@@ -36,19 +36,19 @@ const Common = dynamic(
 
 export default function Page() {
   return (
-    <div className="w-screen overflow-x-hidden text-white">
+    <div className="w-screen">
       <Header />
-      <div className="relative w-full h-[180vw] sm:h-screen bg-black">
-        {/* jumbo */}
+      {/* first screen */}
+      <div className="relative w-full h-screen bg-black">
         <Heading />
-
-        <View className="flex h-full w-full overflow-hidden flex-col items-center justify-center">
+        <View className="h-full w-full">
           <Suspense fallback={null}>
             <Chaos position={[0, -5.5, 3]} rotation={[0, -0.2, 0]} />
-            {/* <Common /> */}
           </Suspense>
         </View>
       </div>
+
+      <h1 className=" text-5xl">Ⅰ. Chaos</h1>
 
       <div className="mx-auto flex w-full flex-col flex-wrap items-center p-12 md:flex-row  lg:w-4/5">
         {/* first row */}
