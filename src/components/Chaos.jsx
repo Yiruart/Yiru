@@ -1,5 +1,8 @@
+"use client";
+
+import { cn } from "lib/utils";
 import dynamic from "next/dynamic";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 
 const data = {
   title: "01. CHAOS",
@@ -35,18 +38,37 @@ const Common = dynamic(
 );
 
 const Chaos = () => {
+  const [active, setActive] = useState(0);
+
   return (
-    <div className="h-screen w-screen flex flex-col px-16">
-      <h1 className="mt-8 flex justify-center font-cardinal text-6xl italic">
+    <div className="h-screen w-screen flex flex-col p-8 sm:p-16">
+      <h1 className="flex justify-center font-cardinal text-4xl sm:text-6xl italic mb-4">
         {data.title}
       </h1>
       <div className="flex flex-col items-center justify-center sm:flex-row w-full gap-8">
-        {/* first row */}
         <div className="relative h-48 w-full py-6 sm:w-1/2 md:my-12 md:mb-40">
-          <ul className="flex gap-x-2 text-3xl font-medium font-cardinal mb-4">
-            <li>Four People /</li>
-            <li>Web /</li>
-            <li>Bone</li>
+          <ul className="flex gap-x-2 text-2xl sm:text-3xl font-medium font-cardinal mb-4">
+            {data.list.map((item, index) => {
+              return (
+                <>
+                  {index !== 0 && index !== data.list.length && (
+                    <span>/&nbsp;</span>
+                  )}
+                  <li
+                    key={index}
+                    className={cn(
+                      "cursor-pointer transition-all duration-300 ease-linear",
+                      index == active
+                        ? "text-white underline underline-offset-8"
+                        : "opacity-50"
+                    )}
+                    onClick={() => setActive(index)}
+                  >
+                    {item.name}
+                  </li>
+                </>
+              );
+            })}
           </ul>
           <p>{data.description}</p>
         </div>

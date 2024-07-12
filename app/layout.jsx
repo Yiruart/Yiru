@@ -3,7 +3,7 @@ import "@/global.css";
 import localFont from "next/font/local";
 
 export const metadata = {
-  title: "Yiru Wang's Portfolio",
+  title: "Yiru Wang",
   description: "An artist based in London.",
 };
 

@@ -1,6 +1,6 @@
 "use client";
 
-import ScheduledForAbolition from "@/ScheduledForAbolition";
+import ScheduledForAbolition from "@/components/ScheduledForAbolition";
 import Chaos from "@/components/Chaos";
 import Header from "@/components/Header";
 import About from "@/components/about/About";
@@ -37,13 +37,13 @@ export default function Page() {
 
       {/* Homepage Model */}
       <div className="relative w-screen h-screen">
-        <Heading />
         <View className="h-full w-full">
           <Suspense fallback={null}>
             <ChaosModel position={[0, -5.5, 3]} rotation={[0, -0.2, 0]} />
             <Common />
           </Suspense>
         </View>
+        <Heading />
       </div>
 
       <Menu />
