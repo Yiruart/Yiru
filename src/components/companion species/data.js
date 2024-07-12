@@ -1,4 +1,5 @@
 export const data = {
+  slug: "companion_species",
   title: "04. Companion species",
   description:
     "This art series explores the interconnectedness of companion species, focusing on mushrooms within a post-human context. By envisioning a future where human influence has waned, the artworks depict mushrooms as pivotal organisms in the ecosystem, symbolizing resilience and symbiosis. The visual narrative highlights the role of fungi in regenerating and maintaining ecological balance, suggesting a symbiotic relationship with the remnants of human civilization. The imagery, rendered in ethereal and organic styles, evokes a sense of serene coexistence, where mushrooms thrive amidst the vestiges of a bygone human era. This series invites viewers to reflect on the enduring impact of companion species and the potential for new forms of ecological harmony in a post-human world.",

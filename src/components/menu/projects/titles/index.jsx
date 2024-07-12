@@ -24,7 +24,7 @@ export default function index({ data, setSelectedProject }) {
 }
 
 function Title({ data, setSelectedProject }) {
-  const { title, speed, i } = data;
+  const { title, speed, i, href } = data;
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -37,7 +37,7 @@ function Title({ data, setSelectedProject }) {
 
   return (
     <div ref={container} className={styles.title}>
-      <div
+      <a
         className={styles.wrapper}
         onMouseOver={() => {
           setSelectedProject(i);
@@ -45,13 +45,14 @@ function Title({ data, setSelectedProject }) {
         onMouseLeave={() => {
           setSelectedProject(null);
         }}
+        href={href}
       >
         <motion.p style={{ clipPath: clip }} className="tracking-tighter">
           {title}
         </motion.p>
 
         <p className="tracking-tighter">{title}</p>
-      </div>
+      </a>
     </div>
   );
 }

@@ -70,6 +70,7 @@ export default function About() {
         manageMouseMove(e);
       }}
       className={styles.main}
+      id="who_i_am"
     >
       <div ref={plane1} className={styles.plane}>
         <Image

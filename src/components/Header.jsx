@@ -1,10 +1,10 @@
 const Header = () => {
   return (
     <header className="fixed top-0 w-screen flex justify-between items-center gap-x-1 p-2 sm:pr-6 z-50 text-xs sm:text-base h-8">
-      <div>
+      <a href="#menu">
         YIRU·W
         <span className="pl-1">®</span>
-      </div>
+      </a>
       <a
         href="mailto:yiruwang@gmail.com"
         className="flex items-center ml-2 hover:cursor-pointer hover:border-b border-white"

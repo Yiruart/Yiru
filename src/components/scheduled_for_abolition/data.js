@@ -1,4 +1,5 @@
 export const data = {
+  slug: "scheduled_for_abolition",
   title: "02. Scheduled for abolition",
   description:
     "The concept of planned obsolescence, traditionally associated with industry, can intriguingly be extended to biology. In this context, life itself can be viewed as the planned obsolescence of genes, where biological processes are designed to phase out certain genetic materials over time. The pursuit of immortality thus becomes a complex interplay, akin to a tug-of-war, with perpetually evolving genes striving for longevity. This raises a profound question: does immortality pertain to the extended lifespan of individual organisms, or is it fundamentally about the perpetuation and continuous evolution of genetic information across generations? The answer to this query could redefine our understanding of life, longevity, and the ultimate goals of biological existence.",

@@ -32,7 +32,10 @@ const Chaos = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <div className="relative h-auto sm:h-screen w-screen flex flex-col  sm:p-16">
+    <div
+      className="relative h-auto sm:h-screen w-screen flex flex-col  sm:p-16"
+      id={data.slug}
+    >
       <h1 className="flex justify-center font-cardinal text-4xl sm:text-6xl italic mb-4 z-10">
         {data.title}
       </h1>

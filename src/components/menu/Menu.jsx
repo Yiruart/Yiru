@@ -12,7 +12,10 @@ const Earth = dynamic(() => import("./Earth"), {
 const Menu = () => {
   return (
     <SmoothScroll>
-      <nav className="w-full h-[80vw] sm:h-[60vw] flex justify-center items-center bg-black">
+      <nav
+        className="w-full h-[80vw] sm:h-[60vw] flex justify-center items-center bg-black"
+        id="menu"
+      >
         <Projects />
         <Earth />
       </nav>
