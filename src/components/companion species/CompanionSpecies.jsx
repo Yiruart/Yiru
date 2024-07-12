@@ -33,7 +33,7 @@ const CompanionSpecies = () => {
 
   return (
     <div
-      className="relative h-auto sm:h-screen w-screen flex flex-col  sm:p-16"
+      className="relative h-auto sm:h-screen w-screen flex flex-col sm:p-16"
       id={data.slug}
     >
       <h1 className="flex justify-center font-cardinal text-4xl sm:text-6xl italic mb-4 z-10">
@@ -78,7 +78,9 @@ const CompanionSpecies = () => {
           </Suspense>
         </View>
       </div>
-      <p className="block sm:hidden w-full p-8">{data.description}</p>
+      <p className="block sm:hidden w-full p-8 mb-24 sm:mb-0">
+        {data.description}
+      </p>
     </div>
   );
 };

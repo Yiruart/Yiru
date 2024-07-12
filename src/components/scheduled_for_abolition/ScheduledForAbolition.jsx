@@ -78,7 +78,9 @@ const ScheduledForAbolition = () => {
           </Suspense>
         </View>
       </div>
-      <p className="block sm:hidden w-full p-8">{data.description}</p>
+      <p className="block sm:hidden w-full p-8 mb-24 sm:mb-0">
+        {data.description}
+      </p>
     </div>
   );
 };
