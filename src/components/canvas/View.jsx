@@ -8,10 +8,8 @@ import {
 } from "@react-three/drei";
 import { Three } from "@/helpers/components/Three";
 
-export const Common = ({ color }) => (
+export const Common = () => (
   <Suspense fallback={null}>
-    {/* {color && <color attach="background" args={[color]} />} */}
-    {/* <ambientLight /> */}
     <pointLight position={[20, 30, 10]} intensity={0.03} decay={0.2} />
     <pointLight position={[-10, 10, -10]} decay={0.9} />
     <PerspectiveCamera makeDefault fov={40} position={[0, 0, 10]} />
