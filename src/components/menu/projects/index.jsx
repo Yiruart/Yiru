@@ -17,16 +17,16 @@ const data = [
     speed: 0.5,
   },
   {
-    title: "On The Nose",
-    description:
-      "I was just one person on a massive team that created an entire Royal Caribbean eco-system.",
-    speed: 0.8,
-  },
-  {
     title: "Companion Species",
     description:
       "Defined the visual concept and design language for the Lincoln Zephyr 2022 but never seen it in real life.",
     speed: 0.67,
+  },
+  {
+    title: "On The Nose",
+    description:
+      "I was just one person on a massive team that created an entire Royal Caribbean eco-system.",
+    speed: 0.8,
   },
   {
     title: "Day In Night",

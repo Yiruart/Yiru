@@ -8,6 +8,8 @@ import Menu from "@/components/menu/Menu";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import ScheduledForAbolition from "@/components/scheduled_for_abolition/ScheduledForAbolition";
+import CompanionSpecies from "@/components/companion species/CompanionSpecies";
+import DayInNight from "@/components/day in night/DayInNight";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
@@ -51,6 +53,10 @@ export default function Page() {
       <Chaos />
 
       <ScheduledForAbolition />
+
+      <CompanionSpecies />
+
+      <DayInNight />
 
       <About />
     </div>
