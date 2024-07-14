@@ -6,7 +6,7 @@ const Header = () => {
         <span className="pl-1">®</span>
       </a>
       <a
-        href="mailto:yiruwang@gmail.com"
+        href="mailto:yiru.00.wang@gmail.com"
         className="flex items-center ml-2 hover:cursor-pointer hover:border-b border-white"
       >
         EMAIL

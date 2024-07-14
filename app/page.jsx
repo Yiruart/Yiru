@@ -11,6 +11,7 @@ import ScheduledForAbolition from "@/components/scheduled_for_abolition/Schedule
 import CompanionSpecies from "@/components/companion species/CompanionSpecies";
 import DayInNight from "@/components/day in night/DayInNight";
 import OnTheNose from "@/components/on the nose/OnTheNose";
+import WhoIAm from "@/components/who i am/WhoIAm";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
@@ -59,7 +60,9 @@ export default function Page() {
 
       <DayInNight />
 
-      <About />
+      <WhoIAm />
+
+      {/* <About /> */}
     </div>
   );
 }

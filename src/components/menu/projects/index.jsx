@@ -8,42 +8,42 @@ const data = [
     href: "#chaos",
     title: "Chaos",
     description:
-      "Working on the Next-Generation HMI Experience without no driving experience.",
+      "A human being is shaped by an intricate web of relationships, continually constructing and reconstructing their identity through interactions.",
     speed: 0.5,
   },
   {
     href: "#scheduled_for_abolition",
     title: "Scheduled For Abolition",
     description:
-      "Developed the Future of UFC Sports Ecosystem despite not being a sports fan.",
+      "Exploring planned obsolescence in biology, this concept questions whether immortality means individual longevity or the continuous evolution of genes.",
     speed: 0.5,
   },
   {
     href: "#on_the_nose",
     title: "On The Nose",
     description:
-      "I was just one person on a massive team that created an entire Royal Caribbean eco-system.",
+      "Using EEG, this project visualizes brain responses to scents, creating tactile 3D models that embody and depict olfactory sensations.",
     speed: 0.8,
   },
   {
     href: "#companion_species",
     title: "Companion Species",
     description:
-      "Defined the visual concept and design language for the Lincoln Zephyr 2022 but never seen it in real life.",
+      "This series envisions a post-human world where mushrooms symbolize resilience and ecological balance amid human remnants, highlighting symbiosis and regeneration.",
     speed: 0.67,
   },
   {
     href: "#day_in_night",
     title: "Day In Night",
     description:
-      "Designed a 1M+ users product utilizing my best personal experience: sleeping.",
+      "At the world's edge, amid shifting day and night, I ponder time's essence.",
     speed: 0.8,
   },
   {
     href: "#who_i_am",
     title: "Who Am I",
     description:
-      "Explored the Future of Fantasy Football while being in a country where football means a total different sport.",
+      "Explores identity and familial bonds, highlighting the struggle between personal self-discovery and familial expectations through evocative visuals.",
     speed: 0.8,
   },
 ];

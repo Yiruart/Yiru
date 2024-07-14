@@ -10,4 +10,33 @@ export const data = {
     I tested the brain waves of people who smelled different odours and collected data and modelled them.
     I experimented with tactile rendering using 3d printing. And am trying to make supplies for 3d printing with raw materials that correspond to odours. Let it have the odour and at the same time can be seen and felt.`,
   images: { name: "on_the_nose", max: 10 },
+  list: [
+    {
+      name: "01",
+      model: {
+        src: "/models/on_the_nose/1c.glb",
+        position: [0, 0, 0],
+        scale: 0.08,
+        rotation: [0, -Math.PI / 16, 0],
+      },
+    },
+    {
+      name: "02",
+      model: {
+        src: "/models/on_the_nose/2c.glb",
+        position: [0, 0, 0],
+        scale: 0.08,
+        rotation: [0, Math.PI / 8, 0],
+      },
+    },
+    {
+      name: "03",
+      model: {
+        src: "/models/on_the_nose/3c.glb",
+        position: [0, 0, 0],
+        scale: 0.08,
+        // rotation: [0, -Math.PI / 16, 0],
+      },
+    },
+  ],
 };
