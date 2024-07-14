@@ -10,6 +10,7 @@ import CompanionSpecies from "@/components/companion species/CompanionSpecies";
 import DayInNight from "@/components/day in night/DayInNight";
 import OnTheNose from "@/components/on the nose/OnTheNose";
 import WhoIAm from "@/components/who i am/WhoIAm";
+import Logo from "@/components/Logo";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
@@ -35,7 +36,7 @@ const Common = dynamic(
 
 export default function Page() {
   return (
-    <div className="w-screen font-proxima">
+    <div className="w-screen font-proxima bg-black mb-[screen]">
       {/* Homepage Model for pc*/}
       <div className="relative w-screen h-screen">
         <View className="h-full w-full">
