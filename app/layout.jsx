@@ -1,8 +1,6 @@
 import { Layout } from "@/components/dom/Layout";
 import "@/global.css";
 import localFont from "next/font/local";
-import Logo from "@/components/Logo";
-import About from "@/components/About";
 
 export const metadata = {
   title: "Yiru Wang",
@@ -36,8 +34,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className="antialiased">
       <body className={`${proxima.variable}`}>
         <Layout>{children}</Layout>
-        <About />
-        <Logo />
       </body>
     </html>
   );

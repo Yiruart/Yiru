@@ -11,6 +11,7 @@ import DayInNight from "@/components/day in night/DayInNight";
 import OnTheNose from "@/components/on the nose/OnTheNose";
 import WhoIAm from "@/components/who i am/WhoIAm";
 import Logo from "@/components/Logo";
+import About from "@/components/About";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
@@ -36,33 +37,37 @@ const Common = dynamic(
 
 export default function Page() {
   return (
-    <div className="w-screen font-proxima bg-black mb-[screen]">
-      {/* Homepage Model for pc*/}
-      <div className="relative w-screen h-screen">
-        <View className="h-full w-full">
-          <Suspense fallback={null}>
-            <ChaosModel position={[0, -5.5, 3]} rotation={[0, -0.2, 0]} />
-            <Common />
-          </Suspense>
-        </View>
-        <Heading />
+    <>
+      <div className="w-screen font-proxima bg-black mb-[screen]">
+        {/* Homepage Model for pc*/}
+        <div className="relative w-screen h-screen">
+          <View className="h-full w-full">
+            <Suspense fallback={null}>
+              <ChaosModel position={[0, -5.5, 3]} rotation={[0, -0.2, 0]} />
+              <Common />
+            </Suspense>
+          </View>
+          <Heading />
+        </div>
+
+        <Menu />
+
+        <Chaos />
+
+        <ScheduledForAbolition />
+
+        <OnTheNose />
+
+        <CompanionSpecies />
+
+        <DayInNight />
+
+        <WhoIAm />
+
+        {/* <About /> */}
       </div>
-
-      <Menu />
-
-      <Chaos />
-
-      <ScheduledForAbolition />
-
-      <OnTheNose />
-
-      <CompanionSpecies />
-
-      <DayInNight />
-
-      <WhoIAm />
-
-      {/* <About /> */}
-    </div>
+      <About />
+      <Logo />
+    </>
   );
 }
