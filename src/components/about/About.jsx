@@ -127,7 +127,7 @@ export default function About() {
         />
       </div>
       <div className={styles.title}>
-        <h1 className="font-cardinal text-4xl">WHO I AM</h1>
+        <h1 className="text-4xl">WHO I AM</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel
           urna id eros pharetra suscipit. Nunc tincidunt, nibh non scelerisque

@@ -36,12 +36,12 @@ const CompanionSpecies = () => {
       className="relative h-auto sm:h-screen w-screen flex flex-col sm:p-16"
       id={data.slug}
     >
-      <h1 className="flex justify-center font-cardinal text-4xl sm:text-6xl italic mb-4 z-10">
+      <h1 className="flex justify-center font-light text-4xl sm:text-6xl mb-4 z-10">
         {data.title}
       </h1>
 
       <div className="sm:absolute sm:w-[40%] top-[30%] left-8 sm:left-16 z-10 p-8 sm:p-0">
-        <ul className="flex gap-x-2 text-2xl sm:text-3xl font-medium font-cardinal mb-4">
+        <ul className="flex gap-x-2 text-2xl sm:text-3xl font-medium mb-4">
           {data.list.map((item, index) => {
             return (
               <>

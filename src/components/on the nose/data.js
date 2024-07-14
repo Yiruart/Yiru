@@ -1,6 +1,6 @@
 export const data = {
   slug: "on_the_nose",
-  title: "03. On the nose",
+  title: "On the nose",
   description: `Have you ever wondered what happens in the brain when we perceive odors? This project uses EEG to show how our brain represents scents, making it easier for people to understand and feel the essence of odors.
 
     I tried to represent how the sense of smell in the way of other senses.

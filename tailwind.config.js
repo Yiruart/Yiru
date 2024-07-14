@@ -19,7 +19,6 @@ module.exports = {
     extend: {
       fontFamily: {
         proxima: ["var(--font-proxima)"],
-        cardinal: ["var(--font-cardinal)"],
       },
       keyframes: {
         "accordion-down": {

@@ -29,27 +29,10 @@ const proxima = localFont({
   variable: "--font-proxima",
 });
 
-const cardinal = localFont({
-  src: [
-    {
-      path: "../public/fonts/cardinalfruit-regular.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/cardinalfruit-medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-  variable: "--font-cardinal",
-});
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="antialiased">
-      <body className={`${proxima.variable} ${cardinal.variable}`}>
+      <body className={`${proxima.variable}`}>
         <Layout>{children}</Layout>
       </body>
     </html>
