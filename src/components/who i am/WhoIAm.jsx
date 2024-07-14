@@ -4,7 +4,7 @@ import { data } from "./data";
 const WhoIAm = () => {
   return (
     <div
-      className="relative h-auto w-screen flex flex-col p-8 sm:p-16"
+      className="relative h-auto w-screen flex flex-col p-8 sm:p-16 mt-24"
       id={data.slug}
     >
       <h1 className="flex justify-center font-light text-4xl sm:text-6xl mb-8 z-10">
