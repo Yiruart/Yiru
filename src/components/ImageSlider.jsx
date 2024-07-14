@@ -11,7 +11,7 @@ import {
 import Image from "next/image";
 import { cn } from "lib/utils";
 
-export function ImageSlider({ name, max, ratio }) {
+export function ImageSlider({ name, max, ratio, basis }) {
   let imgArr = [];
   for (let i = 1; i <= max; i++) {
     imgArr.push(`/images/${name}/${i}-min.jpg`);
@@ -25,7 +25,10 @@ export function ImageSlider({ name, max, ratio }) {
     >
       <CarouselContent>
         {imgArr.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem
+            key={index}
+            className={cn("md:basis-1/2 lg:basis-1/3", basis && "lg:basis-1/4")}
+          >
             <div className="p-1">
               <Card>
                 <CardContent

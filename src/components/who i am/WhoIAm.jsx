@@ -15,6 +15,7 @@ const WhoIAm = () => {
         name={data.images.name}
         max={data.images.max}
         ratio={3 / 4}
+        basis={4}
       />
     </div>
   );
