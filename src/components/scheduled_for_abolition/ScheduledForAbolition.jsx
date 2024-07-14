@@ -38,7 +38,7 @@ const ScheduledForAbolition = () => {
       className="relative h-auto sm:h-screen w-screen flex flex-col sm:p-16"
       id={data.slug}
     >
-      <h1 className="flex justify-center font-light text-4xl sm:text-6xl mb-4 z-10">
+      <h1 className="flex justify-center font-light text-4xl sm:text-6xl mb-4 z-10 px-8">
         {data.title}
       </h1>
 

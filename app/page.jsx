@@ -1,8 +1,6 @@
 "use client";
 
 import Chaos from "@/components/chaos/Chaos";
-import Header from "@/components/Header";
-import About from "@/components/about/About";
 import Heading from "@/components/home/Heading";
 import Menu from "@/components/menu/Menu";
 import dynamic from "next/dynamic";
@@ -17,6 +15,7 @@ const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
   { ssr: false }
 );
+
 const View = dynamic(
   () => import("@/components/canvas/View").then((mod) => mod.View),
   {
@@ -37,7 +36,7 @@ const Common = dynamic(
 export default function Page() {
   return (
     <div className="w-screen font-proxima">
-      {/* Homepage Model */}
+      {/* Homepage Model for pc*/}
       <div className="relative w-screen h-screen">
         <View className="h-full w-full">
           <Suspense fallback={null}>

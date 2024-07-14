@@ -1,8 +1,8 @@
 "use client";
 
-import { useGLTF, Gltf } from "@react-three/drei";
+import { Gltf, Environment, PerspectiveCamera } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useRef, useState } from "react";
+import { useRef, useState, Suspense } from "react";
 import { useCursor, MeshDistortMaterial } from "@react-three/drei";
 import { useRouter } from "next/navigation";
 import { easing } from "maath";
@@ -64,3 +64,49 @@ export const Chaos = ({ ...props }) => {
     </group>
   );
 };
+
+export const ModelForPhone = () => {
+  <group>
+    <Environment preset="sunset" />
+    <Gltf
+      src="/models/chaos/1c.glb"
+      position={[0, 1, 0]}
+      scale={[0.1, 0.1, 0.1]}
+      rotation={[0, Math.PI * 0.78, 0]}
+    />
+  </group>;
+};
+
+export function Light() {
+  const light = useRef();
+
+  useFrame((state, delta) => {
+    easing.damp3(
+      light.current.position,
+      [state.pointer.x * 8, 0, 12 + state.pointer.y * 2],
+      0.2,
+      delta
+    );
+  });
+  return (
+    <Suspense fallback={null}>
+      <spotLight
+        angle={0.5}
+        penumbra={0.5}
+        ref={light}
+        castShadow
+        intensity={30}
+        shadow-mapSize={1024}
+        shadow-bias={-0.001}
+      >
+        <orthographicCamera
+          attach="shadow-camera"
+          args={[-10, 10, -10, 10, 0.1, 50]}
+        />
+      </spotLight>
+      <pointLight position={[20, 30, 10]} intensity={0.1} decay={0.2} />
+      <pointLight position={[-10, 10, -10]} decay={0.9} />
+      <PerspectiveCamera makeDefault fov={40} position={[0, 0, 10]} />
+    </Suspense>
+  );
+}

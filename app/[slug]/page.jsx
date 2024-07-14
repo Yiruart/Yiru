@@ -16,7 +16,7 @@ const page = ({ params }) => {
     imgArr.push(`/images/${params.slug}/${i}-min.jpg`);
   }
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-black mt-8">
       <Masonry
         items={imgArr}
         config={{
