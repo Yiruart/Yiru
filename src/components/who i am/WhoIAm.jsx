@@ -11,7 +11,11 @@ const WhoIAm = () => {
         {data.title}
       </h1>
       <p>{data.description}</p>
-      <ImageSlider name={data.images.name} max={data.images.max} />
+      <ImageSlider
+        name={data.images.name}
+        max={data.images.max}
+        ratio={3 / 4}
+      />
     </div>
   );
 };

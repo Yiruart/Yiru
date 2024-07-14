@@ -9,8 +9,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { cn } from "lib/utils";
 
-export function ImageSlider({ name, max }) {
+export function ImageSlider({ name, max, ratio }) {
   let imgArr = [];
   for (let i = 1; i <= max; i++) {
     imgArr.push(`/images/${name}/${i}-min.jpg`);
@@ -27,8 +28,13 @@ export function ImageSlider({ name, max }) {
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card>
-                <CardContent className="relative flex aspect-square items-center justify-center p-6">
-                  <Image src={item} fill className=" object-cover" />
+                <CardContent
+                  className={cn(
+                    "relative flex aspect-square items-center justify-center p-6",
+                    ratio && "aspect-[3/4]"
+                  )}
+                >
+                  <Image src={item} fill className="object-cover" />
                 </CardContent>
               </Card>
             </div>

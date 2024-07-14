@@ -59,7 +59,7 @@ export function Light() {
         penumbra={0.5}
         ref={light}
         castShadow
-        intensity={20}
+        intensity={30}
         shadow-mapSize={1024}
         shadow-bias={-0.001}
       >
