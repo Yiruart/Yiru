@@ -5,6 +5,8 @@ import dynamic from "next/dynamic";
 import { Suspense, useState } from "react";
 import { data } from "./data";
 import { Light } from "./Models";
+import RightArrow from "@/components/ui/RightArrow";
+import Link from "next/link";
 
 const M1 = dynamic(() => import("./Models").then((mod) => mod.M1), {
   ssr: false,
@@ -65,6 +67,13 @@ const Chaos = () => {
           })}
         </ul>
         <p className="hidden sm:block w-full">{data.description}</p>
+        <Link
+          href={`/${data.slug}`}
+          className="hidden sm:flex items-center text-lg px-0 text-white group mt-4"
+        >
+          View Rendering
+          <RightArrow dark={false} />
+        </Link>
       </div>
 
       <div className="block sm:absolute sm:top-0 sm:right-0 w-full h-[100vw] sm:w-[70%] sm:h-screen sm:ml-auto">
@@ -78,9 +87,16 @@ const Chaos = () => {
           </Suspense>
         </View>
       </div>
-      <p className="block sm:hidden w-full p-8 mb-24 sm:mb-0">
-        {data.description}
-      </p>
+      <div className="block sm:hidden mb-24 p-8">
+        <p>{data.description}</p>
+        <Link
+          href={`/${data.slug}`}
+          className="sm:hidden flex items-center text-lg px-0 text-white group mt-4"
+        >
+          View Rendering
+          <RightArrow dark={false} />
+        </Link>
+      </div>
     </div>
   );
 };
