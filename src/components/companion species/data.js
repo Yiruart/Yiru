@@ -9,7 +9,7 @@ export const data = {
       model: {
         src: "/models/companion_species/1c.glb",
         position: [0, -0.2, 0],
-        scale: [0.015, 0.015, 0.015],
+        scale: [0.014, 0.014, 0.014],
         rotation: [Math.PI * -1.5, 0, 0],
       },
     },

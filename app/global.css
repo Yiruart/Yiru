@@ -14,3 +14,24 @@ body {
   color: white;
   position: relative;
 }
+
+/* 定义滚动条宽度 */
+.scrollable-div::-webkit-scrollbar {
+  width: 6px; /* 可以根据需要调整宽度 */
+}
+
+/* 滚动条轨道 */
+.scrollable-div::-webkit-scrollbar-track {
+  background: #ffffff; /* 滚动条轨道背景色 */
+}
+
+/* 滚动条滑块 */
+.scrollable-div::-webkit-scrollbar-thumb {
+  background: #888; /* 滑块颜色 */
+  border-radius: 0px;
+}
+
+/* 滑块悬停状态 */
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 悬停时滑块颜色 */
+}

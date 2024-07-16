@@ -22,13 +22,13 @@ const About = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
-    offset: ["start 0.9", "start 0.25"],
+    offset: ["start 0.9", "start 0.1"],
   });
   return (
     <div className="sm:flex justify-center mt-[100vw] sm:mt-[50vh] p-8 pt-32 sm:py-16 h-[110vh] sm:h-screen bg-black">
       <motion.p
         ref={container}
-        className="sm:w-1/2 text-lg sm:text-2xl sm:font-light"
+        className="text-xl sm:text-3xl sm:font-light sm:w-2/3"
         style={{ opacity: scrollYProgress }}
       >
         {words.map((word, i) => {
@@ -41,9 +41,6 @@ const About = () => {
           );
         })}
       </motion.p>
-      <div className="flex-1 h-24 flex justify-center items-center">
-        Exhibition Image Slider
-      </div>
     </div>
   );
 };

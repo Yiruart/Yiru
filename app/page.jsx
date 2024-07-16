@@ -12,6 +12,7 @@ import OnTheNose from "@/components/on the nose/OnTheNose";
 import WhoIAm from "@/components/who i am/WhoIAm";
 import Logo from "@/components/Logo";
 import About from "@/components/About";
+import Exhibition from "@/components/exhibition/Exhibition";
 
 const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
@@ -68,6 +69,7 @@ export default function Page() {
       </div>
       <About />
       <Logo />
+      <Exhibition />
     </>
   );
 }
