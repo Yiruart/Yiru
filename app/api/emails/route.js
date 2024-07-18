@@ -5,8 +5,7 @@ export const POST = async (request) => {
   const email = res.email;
   try {
     const result = await sendEmail({
-      // to: "yiru.wang.art@gmail.com",
-      to: "norafudev@gmail.com",
+      to: "yiru.wang.art@gmail.com",
       name: "Yiru Wang",
       subject: "Request for Exhibition Ticket",
       body: `<div style="text-align: center;">
