@@ -41,7 +41,7 @@ const About = () => {
           );
         })}
       </motion.p>
-      <p className="text-lg font-light">{paragraph}</p>
+      <p className="sm:hidden text-lg font-light">{paragraph}</p>
     </div>
   );
 };
