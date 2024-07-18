@@ -58,9 +58,9 @@ const Desc = () => {
   return (
     <div className="flex flex-col h-fit sm:h-full justify-between p-4 pt-8 font-light">
       <div className="">
-        <h1 className="text-5xl uppercase mb-8">Elysium Echoes</h1>
+        <h1 className="text-4xl sm:text-5xl uppercase mb-8">Elysium Echoes</h1>
 
-        <h2 className="text-2xl mb-6">
+        <h2 className="text-xl sm:text-2xl mb-6">
           Welcome to Elysium Echoes, an innovative exhibition that delves into
           the intricate relationship between environmental change and human
           survival in a post-humanist era.{" "}

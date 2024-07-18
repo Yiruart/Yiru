@@ -25,7 +25,7 @@ const About = () => {
     offset: ["start 0.9", "start 0.1"],
   });
   return (
-    <div className="sm:flex justify-center mt-[100vw] sm:mt-[50vh] p-8 pt-32 sm:py-16 h-[110vh] sm:h-screen bg-black">
+    <div className="sm:flex w-screen justify-center mt-[100vw] sm:mt-[50vh] p-8 pt-32 sm:py-16 h-[110vh] sm:h-screen bg-black">
       <motion.p
         ref={container}
         className="text-xl sm:text-3xl sm:font-light sm:w-2/3"
