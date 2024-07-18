@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { useState } from "react";
+import { ImageSlider } from "../ImageSlider";
 import { MessageForm } from "./MessageForm";
 
 const desc = `This exhibition seeks to explore
@@ -56,7 +56,7 @@ const desc = `This exhibition seeks to explore
 
 const Desc = () => {
   return (
-    <div className="flex flex-col h-full justify-between p-4 pt-8 font-light">
+    <div className="flex flex-col h-fit sm:h-full justify-between p-4 pt-8 font-light">
       <div className="">
         <h1 className="text-5xl uppercase mb-8">Elysium Echoes</h1>
 
@@ -65,6 +65,9 @@ const Desc = () => {
           the intricate relationship between environmental change and human
           survival in a post-humanist era.{" "}
         </h2>
+        <div className="sm:hidden h-fit px-2.5 mb-8">
+          <ImageSlider name="exhibition" max={12} ar="aspect-[16/9]" />
+        </div>
         <p className="mb-1">Date : 14/9-22/9 2024</p>
         <p className="mb-1">
           Location : Perfetti Gallery, 52 Caledonian Road, London, N1 9DP

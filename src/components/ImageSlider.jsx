@@ -11,7 +11,7 @@ import {
 import Image from "next/image";
 import { cn } from "lib/utils";
 
-export function ImageSlider({ name, max, ratio, basis }) {
+export function ImageSlider({ name, max, ratio, basis, ar }) {
   let imgArr = [];
   for (let i = 1; i <= max; i++) {
     imgArr.push(`/images/${name}/${i}-min.jpg`);
@@ -34,7 +34,8 @@ export function ImageSlider({ name, max, ratio, basis }) {
                 <CardContent
                   className={cn(
                     "relative flex aspect-square items-center justify-center p-6",
-                    ratio && "aspect-[3/4]"
+                    ratio && "aspect-[3/4]",
+                    ar
                   )}
                 >
                   <Image src={item} fill className="object-cover" />
