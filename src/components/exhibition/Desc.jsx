@@ -1,9 +1,13 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { useState } from "react";
+import { MessageForm } from "./MessageForm";
 
 const desc = `This exhibition seeks to explore
         how humanity's evolving relationship with the environment shapes and is
@@ -74,12 +78,16 @@ const Desc = () => {
       </div>
       <div className="py-8">
         <h2 className=" uppercase text-3xl mb-8">to get access</h2>
-        <div className="flex justify-between border-b border-white">
+        {/* <form className="flex justify-between border-b border-white">
           <div className="flex-1">YOUR EMAIL</div>
-          <div className="w-fit border p-1 hover:bg-white hover:text-black hover:cursor-pointer transition-all duration-300">
-            SUBSCRIBE
-          </div>
-        </div>
+          <Button
+            className="w-fit border p-1 hover:bg-white hover:text-black hover:cursor-pointer transition-all duration-300 rounded-none"
+            formAction={sendEmail}
+          >
+            {loading ? "Loading" : "SUBSCRIBE"}
+          </Button>
+        </form> */}
+        <MessageForm />
       </div>
     </div>
   );

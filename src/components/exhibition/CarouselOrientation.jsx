@@ -24,7 +24,7 @@ export function CarouselOrientation({ name, max }) {
       orientation="vertical"
       className="w-full relative"
     >
-      <div className="absolute top-[51.5%] left-16">
+      <div className="absolute top-[51.5%] left-12">
         <CarouselPrevious />
         <CarouselNext />
       </div>

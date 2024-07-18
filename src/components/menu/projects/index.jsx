@@ -40,7 +40,7 @@ const data = [
     speed: 0.8,
   },
   {
-    href: "#who_i_am",
+    href: "#who_am_i",
     title: "Who Am I",
     description:
       "Explores identity and familial bonds, highlighting the struggle between personal self-discovery and familial expectations through evocative visuals.",
