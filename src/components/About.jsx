@@ -28,7 +28,7 @@ const About = () => {
     <div className="sm:flex w-screen justify-center mt-[100vw] sm:mt-[50vh] p-8 pt-32 sm:py-16 h-[110vh] sm:h-screen bg-black">
       <motion.p
         ref={container}
-        className="text-xl sm:text-3xl sm:font-light sm:w-2/3"
+        className="hidden sm:block text-xl sm:text-3xl sm:font-light sm:w-2/3"
         style={{ opacity: scrollYProgress }}
       >
         {words.map((word, i) => {
@@ -41,6 +41,7 @@ const About = () => {
           );
         })}
       </motion.p>
+      <p className="text-lg font-light">{paragraph}</p>
     </div>
   );
 };
