@@ -21,6 +21,7 @@ const formSchema = z.object({
 
 export function MessageForm() {
   const [sended, setSended] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   // 1. Define your form.
   const form = useForm({
@@ -32,10 +33,13 @@ export function MessageForm() {
 
   // 2. Define a submit handler.
   async function onSubmit(values) {
+    setLoading(true);
     const res = await fetch("/api/emails", {
       method: "post",
       body: JSON.stringify(values),
     });
+    setSended(true);
+    setLoading(false);
     console.log(res.statusText);
   }
 
@@ -62,9 +66,9 @@ export function MessageForm() {
           type="submit"
           variant="ghost"
           className="rounded-none border border-white"
-          disabled={sended}
+          disabled={loading || sended}
         >
-          {sended ? "RECEIVED" : "SUBSCRIBE"}
+          {loading ? "LOADING..." : sended ? "RECEIVED" : "SUBSCRIBE"}
         </Button>
       </form>
     </Form>

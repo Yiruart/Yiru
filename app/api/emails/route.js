@@ -5,7 +5,7 @@ export const POST = async (request) => {
   const email = res.email;
   try {
     const result = await sendEmail({
-      form: email,
+      from: email,
       to: "yiru.wang.art@gmail.com",
       name: "Yiru Wang",
       subject: "Request for Exhibition Ticket",
