@@ -4,7 +4,7 @@ import Desc from "./Desc";
 
 const data = {
   name: "exhibition",
-  max: 12,
+  max: 11,
 };
 
 const Exhibition = () => {

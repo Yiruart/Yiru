@@ -3,7 +3,7 @@
 import { Masonry } from "react-plock";
 
 const data = [
-  { slug: "chaos", max: 14 },
+  { slug: "chaos", max: 13 },
   { slug: "scheduled_for_abolition", max: 12 },
   { slug: "on_the_nose", max: 10 },
   { slug: "companion_species", max: 3 },

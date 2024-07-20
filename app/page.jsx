@@ -18,6 +18,10 @@ const ChaosModel = dynamic(
   () => import("@/components/canvas/Models").then((mod) => mod.Chaos),
   { ssr: false }
 );
+const ChaosModelForPhone = dynamic(
+  () => import("@/components/canvas/Models").then((mod) => mod.ChaosForPhone),
+  { ssr: false }
+);
 
 const View = dynamic(
   () => import("@/components/canvas/View").then((mod) => mod.View),
@@ -42,9 +46,18 @@ export default function Page() {
       <div className="w-screen font-proxima bg-black mb-[screen]">
         {/* Homepage Model for pc*/}
         <div className="relative w-screen h-screen">
-          <View className="h-full w-full">
+          <View className="hidden sm:block h-full w-full">
             <Suspense fallback={null}>
               <ChaosModel position={[0, -5.5, 3]} rotation={[0, -0.2, 0]} />
+              <Common />
+            </Suspense>
+          </View>
+          <View className="sm:hidden block h-full w-full">
+            <Suspense fallback={null}>
+              <ChaosModelForPhone
+                position={[0, -5.5, 3]}
+                rotation={[0, -0.2, 0]}
+              />
               <Common />
             </Suspense>
           </View>
