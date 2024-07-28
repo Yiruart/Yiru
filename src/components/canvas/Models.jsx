@@ -64,9 +64,9 @@ export const Chaos = ({ ...props }) => {
   );
 };
 
-export const ChaosForPhone = () => {
+export const ChaosForPhone = ({ ...props }) => {
   return (
-    <group>
+    <group {...props}>
       <Gltf
         src="/models/chaos/1c_env.glb"
         position={[-4, -2.7, -1]}
@@ -75,27 +75,10 @@ export const ChaosForPhone = () => {
       />
       <Gltf
         src="/models/chaos/1cc.glb"
-        position={[0, 1, 0]}
+        position={[0, 1.2, 0]}
         scale={[0.06, 0.06, 0.06]}
         rotation={[0, Math.PI * 0.78, 0]}
       />
-      <spotLight
-        angle={0.5}
-        penumbra={0.5}
-        castShadow
-        intensity={15}
-        shadow-mapSize={1024}
-        shadow-bias={-0.001}
-        position={[6, 0, 6]}
-        // ref={light}
-      >
-        <orthographicCamera
-          attach="shadow-camera"
-          args={[-10, 10, -10, 10, 0.1, 50]}
-        />
-        <pointLight position={[20, 30, 10]} intensity={0.1} decay={0.2} />
-        <pointLight position={[-10, 10, -10]} decay={0.9} />
-      </spotLight>
     </group>
   );
 };
