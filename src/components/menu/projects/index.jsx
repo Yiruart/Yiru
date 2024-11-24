@@ -5,6 +5,12 @@ import Descriptions from "./descriptions";
 
 const data = [
   {
+    href: "#elysium_echoes",
+    title: "Elysium Echoes ",
+    description: "Movable devices in a posthuman perspective.",
+    speed: 0.5,
+  },
+  {
     href: "#chaos",
     title: "Chaos",
     description:
@@ -26,6 +32,12 @@ const data = [
     speed: 0.8,
   },
   {
+    href: "#no_60",
+    title: "No.60",
+    description: "A journey through fragmented realities.",
+    speed: 0.8,
+  },
+  {
     href: "#companion_species",
     title: "Companion Species",
     description:
@@ -37,13 +49,6 @@ const data = [
     title: "Day In Night",
     description:
       "At the world's edge, amid shifting day and night, I ponder time's essence.",
-    speed: 0.8,
-  },
-  {
-    href: "#who_am_i",
-    title: "Who Am I",
-    description:
-      "Explores identity and familial bonds, highlighting the struggle between personal self-discovery and familial expectations through evocative visuals.",
     speed: 0.8,
   },
 ];

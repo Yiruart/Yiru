@@ -8,11 +8,12 @@ import ScheduledForAbolition from "@/components/scheduled_for_abolition/Schedule
 import CompanionSpecies from "@/components/companion species/CompanionSpecies";
 import DayInNight from "@/components/day in night/DayInNight";
 import OnTheNose from "@/components/on the nose/OnTheNose";
-import WhoIAm from "@/components/who i am/WhoIAm";
+import No60 from "@/components/No.60/No60";
 import Logo from "@/components/Logo";
 import About from "@/components/About";
 import Exhibition from "@/components/exhibition/Exhibition";
 import FirstScreen from "@/components/home/FirstScreen";
+import ElysiumEchoes from "@/components/elysium echoes/ElysiumEchoes";
 
 export default function Page() {
   return (
@@ -24,17 +25,19 @@ export default function Page() {
 
         <Menu />
 
+        <ElysiumEchoes />
+
         <Chaos />
 
         <ScheduledForAbolition />
 
         <OnTheNose />
 
+        <No60 />
+
         <CompanionSpecies />
 
         <DayInNight />
-
-        <WhoIAm />
       </div>
 
       <About />
