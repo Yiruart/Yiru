@@ -13,7 +13,7 @@ const Menu = () => {
   return (
     <SmoothScroll>
       <nav
-        className="w-full h-[80vw] sm:h-[60vw] flex justify-center items-center bg-black"
+        className="w-full h-[80vw] flex justify-center items-center bg-black"
         id="menu"
       >
         <Projects />
