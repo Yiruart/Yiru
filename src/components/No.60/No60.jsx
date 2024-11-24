@@ -4,7 +4,7 @@ import { data } from "./data";
 const No60 = () => {
   return (
     <div
-      className="relative h-auto w-screen flex flex-col p-8 sm:p-16 mt-24"
+      className="relative h-auto w-screen flex flex-col p-8 sm:p-16 mt-16 sm:mt-24 mb-32 sm:mb-0"
       id={data.slug}
     >
       <h1 className="flex justify-center font-light text-4xl sm:text-6xl mb-10 z-10">

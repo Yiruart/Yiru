@@ -18,7 +18,7 @@ const ElysiumEchoes = () => {
         <Desc />
         <Video />
       </section>
-      <div className="px-8 sm:px-16 sm:mb-20 -mt-48 lg:mt-24">
+      <div className="px-8 sm:px-16 sm:mb-20 -mt-24 lg:mt-24">
         <ImageSlider name={data.name} max={data.max} />
       </div>
     </>
