@@ -33,9 +33,9 @@ export default function Page() {
 
         <OnTheNose />
 
-        <No60 />
-
         <CompanionSpecies />
+
+        <No60 />
 
         <DayInNight />
       </div>

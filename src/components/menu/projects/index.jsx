@@ -32,17 +32,17 @@ const data = [
     speed: 0.8,
   },
   {
-    href: "#no_60",
-    title: "No.60",
-    description: "A journey through fragmented realities.",
-    speed: 0.8,
-  },
-  {
     href: "#companion_species",
     title: "Companion Species",
     description:
       "This series envisions a post-human world where mushrooms symbolize resilience and ecological balance amid human remnants, highlighting symbiosis and regeneration.",
     speed: 0.67,
+  },
+  {
+    href: "#no_60",
+    title: "No.60",
+    description: "A journey through fragmented realities.",
+    speed: 0.8,
   },
   {
     href: "#day_in_night",
